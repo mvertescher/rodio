@@ -95,6 +95,8 @@ extern crate lazy_static;
 extern crate lewton;
 #[cfg(feature = "mp3")]
 extern crate minimp3;
+#[cfg(feature = "sbc")]
+extern crate libsbc;
 
 pub use cpal::{
     default_input_device, default_output_device, devices, input_devices, output_devices, Device,

@@ -16,11 +16,13 @@ lazy_static = "1.0.0"
 lewton = { version = "0.9", optional = true }
 cgmath = "0.14"
 minimp3 = { version = "0.3.0", optional = true }
+libsbc = { path = "../libsbc-rs", version = "0.1.0", optional = true }
 
 [features]
-default = ["flac", "vorbis", "wav", "mp3"]
+default = ["flac", "vorbis", "wav", "mp3", "sbc"]
 
 flac = ["claxon"]
 vorbis = ["lewton"]
 wav = ["hound"]
 mp3 = ["minimp3"]
+sbc = ["libsbc"]
